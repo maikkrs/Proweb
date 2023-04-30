@@ -31,7 +31,7 @@ $(document).ready(function() {
       } else {
         // Agregar el nuevo producto a la tabla
         var id = $("table tbody tr").length + 1;
-        var nuevaFila = "<tr><td>" + id + "</td><td>" + nombre +  "</td><td>" + desc + "</td><td>$" + precio + "</td><td>" + stock + "</td><td><button class='btn btn-e tar'>Editar</button><button class='btn btn-danger'>Eliminar</button></td></tr>";
+        var nuevaFila = "<tr><td>" + id + "</td><td>" + nombre +  "</td><td>" + desc + "</td><td>$" + precio + "</td><td>" + stock + "</td><td><button class='btn btn-editar'>Editar</button><button class='btn btn-danger'>Eliminar</button></td></tr>";
         $("table tbody").append(nuevaFila);
   
         // Limpiar los campos del formulario
