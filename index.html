@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inventario de la farmacia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="jquery-3.6.4.js"></script>
+    <script src="jq.js"></script>
+    <script src="jquery-ui-1.13.2/"></script>
+  </head>
+  <body>
+    <h1>Inventario de la farmacia</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Precio</th>
+          <th>Stock</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Aspirina</td>
+          <td>Ejemplo de desc</td>
+          <td>$10</td>
+          <td>50</td>
+          <td>
+            <button class="btn btn-editar">Editar</button>
+            <button class="btn btn-danger">Eliminar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Paracetamol</td>
+          <td>Ejemplo de desc</td>
+          <td>$8</td>
+          <td>30</td>
+          <td>
+            <button class="btn btn-editar">Editar</button>
+            <button class="btn btn-danger">Eliminar</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Ibuprofeno</td>
+          <td>Ejemplo de desc</td>
+          <td>$12</td>
+          <td>20</td>
+          <td>
+            <button class="btn btn-editar">Editar</button>
+            <button class="btn btn-danger">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn btn-agregar">Agregar producto</button>
+    <div class="formulario">
+      <div class="formulario-contenedor">
+        <h2 class="formulario-titulo">Agregar producto</h2>
+        <form>
+          <div class="formulario-campos">
+            <div class="formulario-campo">
+              <label for="nombre">Nombre:</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="formulario-campo">
+                <label for="desc">Descripción:</label>
+                <input type="text" id="desc" name="desc" required>
+              </div>
+            <div class="formulario-campo">
+              <label for="precio">Precio:</label>
+              <input type="number" id="precio" name="precio" required>
+            </div>
+            <div class="formulario-campo">
+              <label for="stock">Stock:</label>
+              <input type="number" id="stock" name="stock" required>
+            </div>
+          </div>
+          <div class="formulario-botones">
+            <button type="submit" class="btn btn-guardar">Guardar</button>
+            <button type="button" class="btn btn-cancelar">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
